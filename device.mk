@@ -4,7 +4,7 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-# Realme XT is a product launched with pie
+# Realme X is a product launched with pie
 $(call inherit-product, build/make/target/product/product_launched_with_p.mk)
 
 # Inherit from those products. Most specific first.
@@ -392,6 +392,10 @@ PRODUCT_PACKAGES += \
 # Seccomp policy
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/seccomp/mediacodec-seccomp.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/mediacodec.policy
+
+# camera Motor
+PRODUCT_PACKAGES += \
+    lineage.camera.motor@1.0-service.realme_sdm710
 
 # Sensors
 PRODUCT_PACKAGES += \
