@@ -743,4 +743,13 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
         </interface>
         <fqname>@1.0::ICameraMotor/default</fqname>
     </hal>
+    <hal format="hidl">
+        <name>vendor.oppo.hardware.hypnus</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <name>IHypnusUtil</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
 </manifest>
