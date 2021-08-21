@@ -371,7 +371,7 @@
     <!--  Whether Multiuser UI should be shown -->
     <bool name="config_enableMultiUserUI">true</bool>
     
-    <!-- RMX1921 : Define dimensions of the notch -->
+    <!-- RMX1901 : Define dimensions of the notch -->
     <string name="config_mainBuiltInDisplayCutout">M -143,0 L -143,76 L 143,76 L 143,0 Z</string>
     
     <dimen name="status_bar_height_portrait">28dp</dimen>
