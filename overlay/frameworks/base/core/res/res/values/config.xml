@@ -25,9 +25,9 @@
     <string name="config_displayLightSensorType">"qti.sensor.wise_light"</string>
 
     <!-- Flag indicating whether the we should enable the automatic brightness in Settings.
-    Software implementation will be used if config_hardware_auto_brightness_available is not set --> 
+    Software implementation will be used if config_hardware_auto_brightness_available is not set -->
     <bool name="config_automatic_brightness_available">true</bool>
-    
+
     <!-- Power Management: Specifies whether to decouple the interactive state of the
          device from the display on/off state.
          When false, setInteractive(..., true) will be called before the display is turned on
@@ -40,24 +40,24 @@
          This resource should be set to "true" when a doze component has been specified
          to maximize power savings but not all devices support it.
          Refer to power.h for details.
-    -->   
+    -->
     <bool name="config_powerDecoupleInteractiveModeFromDisplay">false</bool>
     <bool name="config_powerDecoupleAutoSuspendModeFromDisplay">true</bool>
 
     <!-- Whether a software navigation bar should be shown. NOTE: in the future this may be
-         autodetected from the Configuration. -->    
+         autodetected from the Configuration. -->
     <bool name="config_showNavigationBar">true</bool>
-    
+
     <!-- Whether the Unprocessed audio source supports the required frequency range and level -->
     <bool name="config_supportAudioSourceUnprocessed">true</bool>
-    
+
     <!-- When true use the linux /dev/input/event subsystem to detect the switch changes
          on the headphone/microphone jack. When false use the older uevent framework. -->
     <bool name="config_useDevInputEventForAudioJack">true</bool>
-    
+
     <!-- If this is true, the screen will come on when you unplug usb/power/whatever. -->
     <bool name="config_unplugTurnsOnScreen">true</bool>
-    
+
     <!-- Whether or not to skip the initial brightness ramps when the display transitions to
          STATE_ON. Setting this to true will skip the brightness ramp to the last stored active
          brightness value and will repeat for the following ramp if autobrightness is enabled. -->
@@ -79,7 +79,7 @@
         <item>3300</item>
         <item>10000</item>
     </integer-array>
-    
+
     <!-- Array of output values for LCD backlight corresponding to the LUX values
          in the config_autoBrightnessLevels array.  This array should have size one greater
          than the size of the config_autoBrightnessLevels array.
@@ -93,7 +93,7 @@
         <item>206</item>
         <item>255</item>
     </integer-array>
-    
+
     <integer-array name="config_autoBrightnessLuxMaxLimit">
         <item>5</item>
         <item>150</item>
@@ -103,7 +103,7 @@
         <item>4000</item>
         <item>80000</item>
     </integer-array>
-    
+
     <!-- Slow brightness animation ramp rate in float. -->
     <item name="config_brightnessRampRateSlowFloat" format="float" type="dimen">0.098039</item>
 
@@ -113,7 +113,7 @@
     <!-- Minimum screen brightness setting allowed by the power manager.
          The user is forbidden from setting the brightness below this level. -->
     <integer name="config_screenBrightnessSettingMinimum">1</integer>
-   
+
     <!-- Maximum screen brightness allowed by the power manager.
          The user is forbidden from setting the brightness above this level. -->
     <integer name="config_screenBrightnessSettingMaximum">255</integer>
@@ -136,7 +136,7 @@
         <item>2</item> <!-- COLOR_MODE_SATURATED -->
         <item>3</item> <!-- COLOR_MODE_AUTOMATIC -->
     </integer-array>
-    
+
     <!-- The maximum range of gamma adjustment possible using the screen
          auto-brightness adjustment setting. -->
     <fraction name="config_autoBrightnessAdjustmentMaxGamma">300.0%</fraction>
@@ -158,16 +158,16 @@
     <integer name="config_maximumScreenDimDuration">18000</integer>
 
     <!-- User activity timeout: Maximum screen dim duration as a percentage of screen off timeout.
-    
+
          This resource is similar to config_maximumScreenDimDuration but the maximum
          screen dim duration is defined as a ratio of the overall screen off timeout
          instead of as an absolute value in milliseconds.  This is useful for reducing
          the dim duration when the screen off timeout is very short.
-    
+
          When computing the screen dim duration, the power manager uses the lesser
          of the effective durations expressed by config_maximumScreenDimDuration and
          config_maximumScreenDimRatio.
-    
+
          This value must be between 0% and 100%.  If the value is zero, the screen will not
          dim before the device goes to sleep.
     -->
@@ -180,35 +180,35 @@
          hysteresis threshold. -->
     <integer name="config_autoBrightnessBrighteningLightDebounce">1000</integer>
     <integer name="config_autoBrightnessDarkeningLightDebounce">4000</integer>
- 
+
     <!-- Flag specifying whether VoLTE should be available for carrier: independent of
          carrier provisioning. If false: hard disabled. If true: then depends on carrier
-         provisioning, availability etc -->    
+         provisioning, availability etc -->
     <bool name="config_carrier_volte_available">true</bool>
-    
-    <!-- Set to true to add links to Cell Broadcast app from Settings and MMS app. -->    
+
+    <!-- Set to true to add links to Cell Broadcast app from Settings and MMS app. -->
     <bool name="config_cellBroadcastAppLinks">true</bool>
 
-    <!-- Flag specifying whether VoLTE is available on device -->    
+    <!-- Flag specifying whether VoLTE is available on device -->
     <bool name="config_device_volte_available">true</bool>
-    
+
     <!-- Flag specifying whether VT is available on device -->
     <bool name="config_device_vt_available">true</bool>
-    
+
     <!-- Flag specifying whether WFC over IMS is available on device -->
     <bool name="config_device_wfc_ims_available">true</bool>
-    
+
     <!-- Is the device capable of hot swapping an ICC Card -->
     <bool name="config_hotswapCapable">true</bool>
-    
+
     <!-- Flag indicating if the speed up audio on mt call code should be executed -->
     <bool name="config_speed_up_audio_on_mt_calls">true</bool>
-    
+
     <!-- Config determines whether to update phone object when voice registration
          state changes. Voice radio tech change will always trigger an update of
-         phone object irrespective of this config -->    
+         phone object irrespective of this config -->
     <bool name="config_switch_phone_on_voice_reg_state_change">false</bool>
-    
+
     <string-array name="config_mobile_tcp_buffers">
         <item>5gnr:2097152,6291456,16777216,512000,2097152,8388608</item>
         <item>lte:2097152,4194304,8388608,262144,524288,1048576</item>
@@ -222,10 +222,10 @@
         <item>gprs:4092,8760,11680,4096,8760,11680</item>
         <item>evdo:4094,87380,524288,4096,16384,262144</item>
     </string-array>
-    
+
     <!-- Boolean indicating if current platform supports BLE peripheral mode -->
     <bool name="config_bluetooth_le_peripheral_mode_supported">true</bool>
-    
+
     <!-- Operating volatage for bluetooth controller. 0 by default-->
      <integer name="config_bluetooth_operating_voltage_mv">3300</integer>
 
@@ -254,7 +254,7 @@
          attributes.  This is used by the connectivity manager to decide which networks can coexist
          based on the hardware -->
     <!-- An Array of "[ConnectivityManager connectionType],
-                  [# simultaneous connection types]"  -->    
+                  [# simultaneous connection types]"  -->
     <string-array name="radioAttributes">
         <item>1,1</item>
         <item>0,1</item>
@@ -286,11 +286,11 @@
          flag is set for wifi displays.
     -->
     <bool name="config_wifiDisplaySupportsProtectedBuffers">true</bool>
-    
+
     <!-- Boolean indicating if restoring network selection should be skipped -->
-    <!-- The restoring is handled by modem if it is true-->    
+    <!-- The restoring is handled by modem if it is true-->
     <bool name="skip_restoring_network_selection">true</bool>
-    
+
     <!-- Whether camera shutter sound is forced or not  (country specific). -->
     <bool name="config_camera_sound_forced">false</bool>
 
@@ -323,7 +323,7 @@
         <item>/system/lib64/libRSCpuRef.so</item>
         <item>/system/lib64/libblas.so</item>
     </string-array>
-    
+
     <!-- List of files pinned by the Pinner Service with the JIT Zygote boot image b/119800099 -->
     <string-array translatable="false" name="config_jitzygoteBootImagePinnerServiceFiles">
         <item>"/system/framework/framework.jar"</item>
@@ -336,10 +336,10 @@
 	<item>"/data/dalvik-cache/arm64/system@system_ext@priv-app@SystemUI@SystemUI.apk@classes.dex"</item>
 	<item>"/data/dalvik-cache/arm64/system@system_ext@priv-app@SystemUI@SystemUI.apk@classes.vdex"</item>
     </string-array>
-    
+
     <!-- Should the pinner service pin the Home application? -->
     <bool name="config_pinnerHomeApp">true</bool>
-    
+
     <!-- ComponentName of a dream to show whenever the system would otherwise have
          gone to sleep.  When the PowerManager is asked to go to sleep, it will instead
          try to start this dream if possible.  The dream should typically call startDozing()
@@ -349,13 +349,13 @@
          Note that doze dreams are not subject to the same start conditions as ordinary dreams.
          Doze dreams will run whenever the power manager is in a dozing state. -->
     <string name="config_dozeComponent">com.android.systemui/com.android.systemui.doze.DozeService</string>
-    
+
     <!-- If true, the doze component is not started until after the screen has been turned off
          and the screen off animation has been performed. -->
     <bool name="config_dozeAfterScreenOffByDefault">false</bool>
     <bool name="config_dozeAlwaysOnDisplayAvailable">true</bool>
     <bool name="config_dozeAlwaysOnEnabled">false</bool>
-     
+
     <!-- Delay that allows some content to arrive at the display before switching
          from DOZE to ON, in millis. -->
     <integer name="config_wakeUpDelayDoze">95</integer>
@@ -367,13 +367,13 @@
 
     <!-- Whether the display blanks itself when transitioning from a doze to a non-doze state -->
     <bool name="config_displayBlanksAfterDoze">true</bool>
-    
+
     <!--  Whether Multiuser UI should be shown -->
     <bool name="config_enableMultiUserUI">true</bool>
-    
+
     <!-- RMX1901 : Define dimensions of the notch -->
     <string name="config_mainBuiltInDisplayCutout">M -143,0 L -143,76 L 143,76 L 143,0 Z</string>
-    
+
     <dimen name="status_bar_height_portrait">28dp</dimen>
 
     <!-- Height of the status bar in landscape -->
@@ -396,10 +396,7 @@
     <!-- Whether device ignores the RSSNR signal implementation -->
     <bool name="config_ignoreRssnrSignalLevel">true</bool>
 
-    <!-- Whether device has a physical display cutout -->
-    <bool name="config_physicalDisplayCutout">true</bool>
-
-    <!-- The list of components which should be automatically disabled for a specific package. --> 
+    <!-- The list of components which should be automatically disabled for a specific package. -->
     <string-array name="config_disabledComponents" translatable="false">
 	<item>com.google.android.googlequicksearchbox/com.google.android.hotword.service.HotwordService</item>
     </string-array>
@@ -443,7 +440,7 @@
 
     <!-- Specifies the maximum burn-in offset vertically. -->
     <integer name="config_burnInProtectionMaxVerticalOffset">40</integer>
- 
+
     <!-- The default journal mode to use use when Write-Ahead Logging is not active.
          Choices are: OFF, DELETE, TRUNCATE, PERSIST and MEMORY.
          PERSIST may improve performance by reducing how often journal blocks are
@@ -497,7 +494,7 @@
 
     <!-- Whether device has screen with higher aspect ratio -->
     <bool name="config_haveHigherAspectRatioScreen">true</bool>
-    
+
     <!-- IWLAN data service package name to bind to by default. If none is specified in an overlay, an
          empty string is passed in -->
     <string name="config_wlan_data_service_package">vendor.qti.iwlan</string>
@@ -544,6 +541,6 @@
     <!-- If not zero, limits the internal screen recorder's framerate to the set value. -->
     <integer name="config_screenRecorderMaxFramerate">60</integer>
 
-    <!-- Screen off delay --> 
+    <!-- Screen off delay -->
     <integer name="config_screen_off_delay">0</integer>
 </resources>
