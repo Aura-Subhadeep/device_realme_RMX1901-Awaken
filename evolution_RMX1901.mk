@@ -4,12 +4,11 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-# Inherit some common LineageOs stuff
-TARGET_FLOS := true
-WITH_GMS := true
+# Inherit some common Evolution stuff
+EXTRA_FOD_ANIMATIONS := true
 TARGET_FACE_UNLOCK_SUPPORTED := true
 TARGET_BOOT_ANIMATION_RES := 1080
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/evolution/config/common_full_phone.mk)
 
 # Inherit from RMX1901 device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
@@ -17,7 +16,7 @@ $(call inherit-product, $(LOCAL_PATH)/device.mk)
 PRODUCT_BRAND := Realme
 PRODUCT_DEVICE := RMX1901
 PRODUCT_MANUFACTURER := Realme
-PRODUCT_NAME := lineage_RMX1901
+PRODUCT_NAME := evolution_RMX1901
 PRODUCT_MODEL := Realme X
 
 PRODUCT_GMS_CLIENTID_BASE := android-oppo
