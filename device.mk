@@ -15,7 +15,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product-if-exists, vendor/realme/RMX1901/RMX1901-vendor.mk)
 
 
-# HIDL 
+# HIDL
 $(call inherit-product, $(LOCAL_PATH)/RMX1921-hidl.mk)
 
 # VNDK
@@ -177,12 +177,8 @@ PRODUCT_PACKAGES += \
 
 # Fingerprint
 PRODUCT_PACKAGES += \
-    android.hardware.biometrics.fingerprint@2.1-service.realme_sdm710 \
-    vendor.lineage.biometrics.fingerprint.inscreen@1.0-service.realme_sdm710 \
+    android.hardware.biometrics.fingerprint@2.3-service.realme_sdm710 \
     vendor.oppo.hardware.biometrics.fingerprint@2.1
-
-PRODUCT_COPY_FILES += \
-    vendor/evolution/config/permissions/vendor.lineage.biometrics.fingerprint.inscreen.xml:vendor/etc/permissions/vendor.lineage.biometrics.fingerprint.inscreen.xml
 
 # IPA
 PRODUCT_PACKAGES += \
