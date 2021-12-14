@@ -519,4 +519,8 @@
      <dimen name="status_bar_height_portrait">29dp</dimen>
 
     <bool name="config_pocketUseLightSensor">false</bool>
+
+    <!-- Exempt ImsService from privacy (location) indicators -->
+    <string name="config_systemAudioIntelligence" translatable="false">vendor.qti.imsrcs</string>
+
 </resources>
