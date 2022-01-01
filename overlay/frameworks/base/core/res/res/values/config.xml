@@ -517,4 +517,6 @@
     <integer name="config_screen_off_delay">0</integer>
         <!-- Height of the status bar -->
      <dimen name="status_bar_height_portrait">29dp</dimen>
+
+    <bool name="config_pocketUseLightSensor">false</bool>
 </resources>
