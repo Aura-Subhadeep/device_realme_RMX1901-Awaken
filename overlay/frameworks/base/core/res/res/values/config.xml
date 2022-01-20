@@ -859,9 +859,6 @@
         <item>evdo:4094,87380,524288,4096,16384,262144</item>
     </string-array>
 
-    <!-- Boolean indicating if current platform supports BLE peripheral mode -->
-    <bool name="config_bluetooth_le_peripheral_mode_supported">true</bool>
-
     <!-- Operating volatage for bluetooth controller. 0 by default-->
      <integer name="config_bluetooth_operating_voltage_mv">3300</integer>
 
@@ -1159,6 +1156,7 @@
          Do not read this dimen directly. Use {@link SystemBarUtils#getStatusBarHeight} instead. -->
     <dimen name="status_bar_height_portrait">77px</dimen>
 
+<<<<<<< HEAD
     <!-- The max scale for the wallpaper when it's zoomed in -->
     <item name="config_wallpaperMaxScale" format="float" type="dimen">1.00</item>
 
@@ -1166,6 +1164,12 @@
 
     <!-- Exempt ImsService from privacy (location) indicators -->
     <string name="config_systemAudioIntelligence" translatable="false">vendor.qti.imsrcs</string>
+=======
+    <string name="config_pocketJudgeVendorProximitySensorName">qti.sensor.proximity_fake</string>
+
+    <!-- Shows the required view for Screen Off Udfps -->
+    <bool name="config_supportsScreenOffUdfps">true</bool>
+>>>>>>> 45c244e... RMX1901: Added new vendors for Bluetooth config migration
 
     <!-- Flag indicating whether the surface flinger is inefficient
          at performing a blur.  Used by parts of the UI to turn off
