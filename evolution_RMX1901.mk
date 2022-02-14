@@ -5,9 +5,9 @@
 #
 
 # Inherit some common Evolution stuff
-EXTRA_FOD_ANIMATIONS := true
 TARGET_FACE_UNLOCK_SUPPORTED := true
 TARGET_BOOT_ANIMATION_RES := 1080
+EXTRA_UDFPS_ANIMATIONS := true
 $(call inherit-product, vendor/evolution/config/common_full_phone.mk)
 
 # Inherit from RMX1901 device
