@@ -6,6 +6,7 @@
 
 # Inherit some common Evolution stuff
 TARGET_FACE_UNLOCK_SUPPORTED := true
+WITH_GAPPS := true
 TARGET_BOOT_ANIMATION_RES := 1080
 EXTRA_UDFPS_ANIMATIONS := true
 $(call inherit-product, vendor/octavi/config/common_full_phone.mk)
