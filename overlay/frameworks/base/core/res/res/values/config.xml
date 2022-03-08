@@ -1147,17 +1147,92 @@
 
     <!-- If not zero, limits the internal screen recorder's framerate to the set value. -->
     <integer name="config_screenRecorderMaxFramerate">60</integer>
+
     <!-- Screen off delay -->
     <integer name="config_screen_off_delay">0</integer>
-        <!-- Height of the status bar -->
-     <dimen name="status_bar_height_portrait">29dp</dimen>
+
+    <!-- Height of the status bar -->
+    <dimen name="status_bar_height_portrait">29dp</dimen>
+
+    <!-- Height of the status bar -->
+    <dimen name="status_bar_height_portrait">29dp</dimen> 
+
+    <!-- The max scale for the wallpaper when it's zoomed in -->
+    <item name="config_wallpaperMaxScale" format="float" type="dimen">1.00</item>
 
     <bool name="config_pocketUseLightSensor">false</bool>
 
     <!-- Exempt ImsService from privacy (location) indicators -->
     <string name="config_systemAudioIntelligence" translatable="false">vendor.qti.imsrcs</string>
 
-
     <string name="config_pocketJudgeVendorProximitySensorName">qti.sensor.proximity_fake</string>
+
+    <!-- Flag indicating whether the surface flinger is inefficient
+         at performing a blur.  Used by parts of the UI to turn off
+         the blur effect where it isn't worth the performance hit.
+         As of Honeycomb, blurring is not supported anymore. -->
+    <bool name="config_sf_slowBlur">false</bool>
+
+    <!-- Flag indicating whether the surface flinger has limited
+         alpha compositing functionality in hardware.  If set, the window
+         manager will disable alpha trasformation in animations where not
+         strictly needed. -->
+    <bool name="config_sf_limitedAlpha">true</bool>
+
+    <!-- Enables or disables fading edges when marquee is enabled in TextView.
+         Off by default, since the framebuffer readback used to implement the
+         fading edges is prohibitively expensive on most GPUs. -->
+    <bool name="config_ui_enableFadingMarquee">true</bool>
+
+    <!-- Vibrator pattern for feedback about a long screen/key press -->
+    <integer-array name="config_longPressVibePattern">
+        <item>0</item>
+        <item>1</item>
+        <item>10</item>
+        <item>11</item>
+    </integer-array>
+
+    <!-- Vibrator pattern for feedback about touching a virtual key -->
+    <integer-array name="config_virtualKeyVibePattern">
+        <item>0</item>
+        <item>5</item>
+        <item>10</item>
+        <item>15</item>
+    </integer-array>
+
+    <!-- Vibrator pattern for a very short but reliable vibration for soft keyboard tap -->
+    <integer-array name="config_keyboardTapVibePattern">
+        <item>20</item>
+    </integer-array>
+
+    <!-- Vibrator pattern for feedback when selecting an hour/minute tick of a Clock -->
+    <integer-array name="config_clockTickVibePattern">
+        <item>68</item>
+        <item>15</item>
+    </integer-array>
+
+    <!-- Vibrator pattern for feedback when selecting a day/month/year date of a Calendar -->
+    <integer-array name="config_calendarDateVibePattern">
+        <item>68</item>
+        <item>15</item>
+    </integer-array>
+
+    <!-- Vibrator pattern for feedback about booting with safe mode enabled -->
+    <integer-array name="config_safeModeEnabledVibePattern">
+        <item>0</item>
+        <item>1</item>
+        <item>10</item>
+        <item>11</item>
+        <item>250</item>
+        <item>300</item>
+    </integer-array>
+
+    <!-- Vibrator pattern for feedback about hitting a scroll barrier -->
+    <integer-array name="config_scrollBarrierVibePattern">
+        <item>0</item>
+        <item>8</item>
+        <item>5</item>
+        <item>5</item>
+    </integer-array>
 
 </resources>
