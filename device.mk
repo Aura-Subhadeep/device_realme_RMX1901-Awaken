@@ -383,8 +383,7 @@ PRODUCT_PACKAGES += \
     init.oppo.vendor.motor.rc \
     apex_metadata.rc \
     init.RealmeParts.rc \
-    init.safailnet.rc \
-    vendor.qti.hardware.iop@2.0-service-disable.rc
+		vendor.qti.hardware.iop@2.0-service-disable.rc
 
 # Recovery
 PRODUCT_PACKAGES += \
