@@ -39,4 +39,6 @@
     <!-- Udfps animation -->
     <dimen name="udfps_animation_offset">30dp</dimen>
 
+    <dimen name="keyguard_indication_margin_bottom">15dp</dimen>
+
 </resources>
