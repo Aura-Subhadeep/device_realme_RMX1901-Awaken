@@ -173,6 +173,11 @@ PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint@2.3-service.realme_sdm710 \
     vendor.oppo.hardware.biometrics.fingerprint@2.1
 
+# HotwordEnrollement app permissions
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/permissions/privapp-permissions-hotword.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-hotword.xml \
+    $(LOCAL_PATH)/configs/permissions/hotword-hiddenapi-package-whitelist.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/hotword-hiddenapi-package-whitelist.xml
+
 # IPA
 PRODUCT_PACKAGES += \
     ipacm \

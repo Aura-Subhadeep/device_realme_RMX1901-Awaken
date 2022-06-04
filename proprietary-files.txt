@@ -816,9 +816,15 @@ vendor/firmware/a640_gmu.bin|fb1eab0dd5f313abf31441e2209c9398da7df98b
 vendor/lib64/hw/vulkan.adreno.so|b609f79d6256f1ef7164facef16e5848f06b76c2
 vendor/lib/hw/vulkan.adreno.so|a92e75acd881b4c80e7cb157ed41cb599cdbcc03
 
-# IMS - from LA.QSSI.12.0.r1-05800.02-qssi.0
--system_ext/app/ImsRcsService/ImsRcsService.apk|3179256a4fce9b7694534a906a97abe23ccb0523
--system_ext/app/uceShimService/uceShimService.apk|d3a55dbb95418751fc4564964ff18f63b9ff1b3b
+# HotwordEnrollment - from vayu
+-product/priv-app/HotwordEnrollmentOKGoogleHEXAGON/HotwordEnrollmentOKGoogleHEXAGON.apk;PRESIGNED|47cd4ed29ce7a556dcdf9b1be6675ddbbb7fca63
+-product/priv-app/HotwordEnrollmentXGoogleHEXAGON/HotwordEnrollmentXGoogleHEXAGON.apk;PRESIGNED|3d8943911ae38e0604f46f34c1a295371b483af4
+system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml|563a58554d9c0dd0608552b644fbf74519a447bb
+system_ext/framework/com.android.hotwordenrollment.common.util.jar|c764b636e0be426a66be09dd08ab9c1921327ef0
+
+# IMS (system) - from LA.QSSI.13.0.r1-08200-qssi.0
+-system_ext/app/ImsRcsService/ImsRcsService.apk|6a5d645d0361447f5c5d31807d646aa38cc31824
+-system_ext/app/uceShimService/uceShimService.apk|d6de9593cf743440f861f041d4724ec9488e4139
 system_ext/etc/permissions/com.qualcomm.qti.imscmservice-V2.0-java.xml|bd9fc166b542b4e730f194ebc996957770d9d497
 system_ext/etc/permissions/com.qualcomm.qti.imscmservice-V2.1-java.xml|b40fc74f7d5e58b4e918f952b89a79cf2a5c4088
 system_ext/etc/permissions/com.qualcomm.qti.imscmservice-V2.2-java.xml|bfceff47fb0b55a418bed71de6050d876a776ac7
