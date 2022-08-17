@@ -82,9 +82,6 @@ debug.sf.enable_hwc_vds=1
 persist.demo.hdmirotationlock=false
 persist.sys.sf.color_saturation=1.0
 persist.sys.sf.native_mode=0
-debug.renderengine.backend=skiaglthreaded
-renderthread.skia.reduceopstasksplitting=true
-debug.hwui.renderer=skiagl
 debug.cpurend.vsync=false
 debug.performance.tuning=1
 
