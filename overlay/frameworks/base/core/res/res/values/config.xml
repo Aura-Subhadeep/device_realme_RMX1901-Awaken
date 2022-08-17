@@ -1167,8 +1167,6 @@
     <!-- Exempt ImsService from privacy (location) indicators -->
     <string name="config_systemAudioIntelligence" translatable="false">vendor.qti.imsrcs</string>
 
-    <string name="config_pocketJudgeVendorProximitySensorName">qti.sensor.proximity_fake</string>
-
     <!-- Flag indicating whether the surface flinger is inefficient
          at performing a blur.  Used by parts of the UI to turn off
          the blur effect where it isn't worth the performance hit.
@@ -1285,5 +1283,4 @@
         <!-- Settings -->
         <item>com.android.settings</item>
     </string-array>
-
 </resources>
