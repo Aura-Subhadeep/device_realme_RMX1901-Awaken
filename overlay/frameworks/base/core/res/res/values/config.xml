@@ -1160,6 +1160,9 @@
 
     <bool name="config_pocketUseLightSensor">false</bool>
 
+    <!-- Is the notification LED intrusive? Used to decide if there should be a disable option -->
+    <bool name="config_intrusiveNotificationLed">false</bool>
+
     <!-- Exempt ImsService from privacy (location) indicators -->
     <string name="config_systemAudioIntelligence" translatable="false">vendor.qti.imsrcs</string>
 
