@@ -72,6 +72,7 @@ ro.vendor.display.sensortype=2
 ro.launcher.blur.appLaunch=false
 
 # Gboard
+ro.com.google.ime.kb_pad_port_b=1
 ro.com.google.ime.kb_pad_port_l=7
 ro.com.google.ime.kb_pad_port_r=7
 ro.com.google.ime.kb_pad_land_l=14
