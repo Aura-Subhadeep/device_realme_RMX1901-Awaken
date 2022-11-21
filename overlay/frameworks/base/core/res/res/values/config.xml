@@ -1138,9 +1138,6 @@
     <!-- Enable Zram writeback feature to allow unused pages in zram be written to flash. -->
     <bool name="config_zramWriteback">true</bool>
 
-    <!-- Is the battery LED intrusive? Used to decide if there should be a disable option -->
-    <bool name="config_intrusiveBatteryLed">false</bool>
-
     <!-- If not zero, limits the internal screen recorder's framerate to the set value. -->
     <integer name="config_screenRecorderMaxFramerate">60</integer>
 
@@ -1162,9 +1159,6 @@
 
     <!-- Is the notification LED intrusive? Used to decide if there should be a disable option -->
     <bool name="config_intrusiveNotificationLed">false</bool>
-
-    <!-- Exempt ImsService from privacy (location) indicators -->
-    <string name="config_systemAudioIntelligence" translatable="false">vendor.qti.imsrcs</string>
 
     <!-- Shows the required view for Screen Off Udfps -->
     <bool name="config_supportsScreenOffUdfps">true</bool>
