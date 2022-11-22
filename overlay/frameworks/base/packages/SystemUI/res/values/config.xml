@@ -76,4 +76,8 @@
          far break points. A sensor value less than this is considered "near". -->
     <item name="proximity_sensor_threshold" translatable="false" format="float" type="dimen">4.99</item>
 
+   <!-- The battery current divider, some kernel report current value in mA other in µA.
+         Leave 1 if you have mA, put 1000 if you have µA -->
+    <integer name="config_battCurrentDivider" translatable="false">1</integer>
+
 </resources>
