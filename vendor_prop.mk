@@ -127,6 +127,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     drm.service.enabled=true
 
+# Netflix custom property
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.netflix.bsp_rev=Q670-14477-1
+
 # Fling
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.min.fling_velocity=160 \
@@ -169,6 +173,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Misc tweaks
 PRODUCT_PROPERTY_OVERRIDES += \
     pm.sleep_mode=1
+
 
 # Perf
 PRODUCT_PROPERTY_OVERRIDES += \
