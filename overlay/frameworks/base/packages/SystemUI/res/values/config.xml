@@ -70,11 +70,7 @@
     <bool name="config_audioPanelOnLeftSide">false</bool>
 
     <!-- Override value to use for proximity sensor.  -->
-    <string name="proximity_sensor_type" translatable="false">android.sensor.proximity</string>
-
-    <!-- If using proximity_sensor_type, specifies a threshold value to distinguish near and
-         far break points. A sensor value less than this is considered "near". -->
-    <item name="proximity_sensor_threshold" translatable="false" format="float" type="dimen">4.99</item>
+    <string name="proximity_sensor_type" translatable="false">qti.sensor.proximity_fake</string>
 
    <!-- The battery current divider, some kernel report current value in mA other in µA.
          Leave 1 if you have mA, put 1000 if you have µA -->
