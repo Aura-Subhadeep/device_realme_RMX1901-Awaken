@@ -1,4 +1,4 @@
-# Device Tree files for Realme X
+# Device Tree for Realme X
 
 The Realme X (codenamed _"RMX1901"_) is a mid-range smartphone from Realme. It was released in July 2019.
 
