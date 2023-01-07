@@ -1286,15 +1286,9 @@ vendor/lib64/vendor.qti.hardware.alarm@1.0.so|c7c418cfc889a89ea4f21bf828f626c75a
 vendor/bin/hw/android.hardware.health@2.1-service|977491e82ca92e267e88f4f8ed655dad0c9fbd83
 vendor/etc/init/android.hardware.health@2.1-service.rc|07814dfd61ba11205f1ad730828a9d8d3b7df509
 
-<<<<<<< HEAD
-# QMI (system) - from LA.QSSI.13.0.r1-05800-qssi.0
-etc/permissions/qti_libpermissions.xml|593bcb72cce68ceb0a70f50bcae7d460114e7c62
-etc/permissions/qti_permissions.xml|e6ff4572352b1a4f91b6b9d7cbb1cad9924410a0
-=======
 # QMI (system) - from LA.QSSI.13.0.r1-08200-qssi.0
 system_ext/etc/permissions/qti_libpermissions.xml|593bcb72cce68ceb0a70f50bcae7d460114e7c62
 system_ext/etc/permissions/qti_permissions.xml|e6ff4572352b1a4f91b6b9d7cbb1cad9924410a0
->>>>>>> 5aa8012... RMX1901: Update System Blobs from LA.QSSI.13.0.r1-08200-qssi.0
 
 # QMI (vendor)
 vendor/bin/irsc_util
@@ -1332,27 +1326,15 @@ vendor/lib/libqmi_csi.so
 vendor/lib/libqmi_encdec.so
 vendor/lib/libqmiservices.so
 
-<<<<<<< HEAD
-# RIL (system) - from LA.QSSI.13.0.r1-05800-qssi.0
-=======
 # RIL (system) - from LA.QSSI.13.0.r1-08200-qssi.0
->>>>>>> 5aa8012... RMX1901: Update System Blobs from LA.QSSI.13.0.r1-08200-qssi.0
 -system_ext/app/QtiTelephonyService/QtiTelephonyService.apk|9ef9e77f209b7d699d0b37463acfb19faf46d6d4
 system_ext/etc/permissions/qcrilhook.xml|30397e293b2c40e6b7a1d11c2a615cdd05de625a
 system_ext/etc/permissions/telephony_system-ext_privapp-permissions-qti.xml|a7e114ea1e6909685ce49717a2b5b66d8275d419
 system_ext/framework/qcrilhook.jar|8d44048c04f4d38a6bf6a279e3bceface10c0dde
-<<<<<<< HEAD
-system_ext/framework/qti-telephony-common.jar|005f939b5314938ab36078bcf9aaa16369b04913
--system_ext/priv-app/ims/ims.apk|abcc8479f91418108cc013630c96cf625f3506af
--system_ext/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk|3ed05e8d9078c817ad3c93780f1541fc27bd552c
-
-=======
 system_ext/framework/qti-telephony-common.jar|3c734cf49e80aaefbb9c01233aff5e8bd5b250dd
 -system_ext/priv-app/ims/ims.apk|4ebf655d48f9924d7a00e993254044c81c497124
 -system_ext/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk|231862ec524e39c96b8b4575f27060caa36ce36b
 
-
->>>>>>> 5aa8012... RMX1901: Update System Blobs from LA.QSSI.13.0.r1-08200-qssi.0
 # RIL (vendor)
 -vendor/app/IWlanService/IWlanService.apk
 vendor/bin/hw/qcrild
